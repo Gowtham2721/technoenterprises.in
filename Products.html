@@ -1,11 +1,517 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <h1>Products</h1>
-</body>
-</html>
+    <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.1/css/font-awesome.min.css">
+    <link rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/products.css">
+    <script defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script defer
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"></script>
+    <script defer src="main.js"></script>
+    <title>Products</title>
+  </head>
+  <body class="light-theme dark-theme">
+    <header class="header">
+      <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg navbar-light">
+          <div
+            class="header-inner d-flex justify-content-between align-items-center">
+            <a class="navbar-brand flex-shrink-0" href="#"><img
+                src="/images/logo-bookmark1.svg"
+                alt="logo-image" class="img-fluid" width="75px">
+              Techno Enterprises</a>
+            <div
+              class="header-content d-flex align-items-center justify-content-end">
+              <form class="d-flex justify-content-end align-items-center">
+                <label class="switch flex-shrink-0 mb-0">
+                  <input id="checkbox" type="checkbox">
+                  <span class="slider round"></span>
+                </label>
+              </form>
+            </div>
+          </div>
+          <button class="hamburger-icon">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </nav>
+      </div>
+    </header>
+    <div class="nft-store">
+      <div class="container-fluid">
+        <div class="nft-store-inner d-flex">
+          <div class="menu-links">
+            <ul>
+              <li class="nav-item active">
+                <a href="/Products.html" class="d-flex align-items-center nav-link"><i
+                    class="fa fa-fire" aria-hidden="true"></i>
+                  <span>Fire Extinguishers</span></a></li>
+              <!-- <div class="menu-links"> -->
+              <!-- <ul> -->
+              <li class="nav-item"><a class="d-flex align-items-center nav-item"
+                  href="#ABC Power Fire Extinguishers"><i class="fa fa-square-o"
+                    aria-hidden="true"></i><span>ABC Power Fire
+                    Extinguishers</span></a></li>
+              <li class="nav-item"><a class="d-flex align-items-center nav-item"
+                  href="#BC Powder Fire Extinguishers"><i class="fa fa-square-o"
+                    aria-hidden="true"></i><span>BC Powder Fire
+                    Extinguishers</span></a></li>
+              <li class="nav-item"><a class="d-flex align-items-center nav-item"
+                  href="#CO2"><i class="fa fa-square-o"
+                    aria-hidden="true"></i><span>C0<sub>2 </sub> Fire
+                    Extinguishers</span></a></li>
+              <li class="nav-item"><a class="d-flex align-items-center nav-item"
+                  href="#CA"><i class="fa fa-square-o"
+                    aria-hidden="true"></i><span>Clean Agent Fire
+                    Extinguishers</span></a></li>
+              <li class="nav-item"><a class="d-flex align-items-center nav-item"
+                  href="#WM"><i class="fa fa-square-o"
+                    aria-hidden="true"></i><span>Water Mist Fire
+                    Extinguishers</span></a></li>
+              <li class="nav-item"><a class="d-flex align-items-center nav-item"
+                  href="#"><i class="fa fa-square-o"
+                    aria-hidden="true"></i><span>Mechanical Foam & Water fire
+                    Extinguishers</span></a></li>
+              <li class="nav-item"><a class="d-flex align-items-center nav-item"
+                  href="#"><i class="fa fa-square-o"
+                    aria-hidden="true"></i><span>Automatic Modular Fire
+                    Extinguishers</span></a></li>
+              <li class="nav-item"><a class="d-flex align-items-center nav-item"
+                  href="#"><i class="fa fa-square-o"
+                    aria-hidden="true"></i><span>Aluminium Body Fire
+                    Extinguishers</span></a></li>
+              <li class="nav-item"><a class="d-flex align-items-center nav-item"
+                  href="#"><i class="fa fa-square-o"
+                    aria-hidden="true"></i><span>Stainless Steel body Fire
+                    Extinguishers</span></a></li>
+              <li class="nav-item">
+                <a href="/Valves.html"
+                  class="d-flex align-items-center nav-link"><i
+                    class="fa fa-fire" aria-hidden="true"></i>
+                  <span>Valves</span></a>
+              </li>
+              <li class="nav-item">
+                <a href="/HA.html" class="d-flex align-items-center nav-link"><i
+                    class="fa fa-fire" aria-hidden="true"></i>
+                  <span>Hydrants & Accessories</span></a>
+              </li>
+              <li class="nav-item">
+                <a href="/SF.html" class="d-flex align-items-center nav-link"><i
+                    class="fa fa-fire" aria-hidden="true"></i>
+                  <span>Sprinklers & Flexiable Drops</span></a>
+              </li>
+            </ul>
+          </div>
+          <div class="nft-up-content">
+            <div class="row" id="ABC Power Fire Extinguishers">
+              <div class="col-md-8">
+                <div
+                  class="fire-bubble-art d-flex justify-content-between  align-items-center">
+                  <img
+                    src="/images/ABC Powder Stored Pressure Portable Fire Extinguishers.webp"
+                    alt="image"
+                    onerror="this.src='/images/Spin@1x-0.7s-200px-200px.svg';"
+                    class="img-fluid fire-image fire-width">
+                  <div class="fire-content fire-width">
+                    <h3 class="mb-0">ABC Powder Stored Pressure Portable Fire
+                      Extinguishers</h3>
+                    <div class="fire-time d-flex justify-content-between">
+                      <div class="current-bid">
+                        <h4>Available Capacities</h4>
+                      </div>
+                      <div class="auction">
+                        <h4><p>1 Kg, 2 Kg, 4 Kg, 6 Kg, 9 Kg</p></h4>
+                      </div>
+                      <span class="middle-line"></span>
+                    </div>
+                    <div class="d-flex fire-links">
+                      <a href="#" class="theme-btn">Place an Order</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-md-8">
+                <div
+                  class="fire-bubble-art d-flex justify-content-between  align-items-center">
+                  <img
+                    src="/images/ABC Powder Stored Pressure Mobile Fire Extinguishers.webp"
+                    alt="image"
+                    onerror="this.src='/images/Spin@1x-0.7s-200px-200px.svg';"
+                    class="img-fluid fire-image fire-width">
+                  <div class="fire-content fire-width">
+                    <h3 class="mb-0">ABC Powder Stored Pressure Mobile Fire
+                      Extinguishers</h3>
+                    <div class="fire-time d-flex justify-content-between">
+                      <div class="current-bid">
+                        <h4>Available Capacities</h4>
+                      </div>
+                      <div class="auction">
+                        <h4><p>1 Kg, 2 Kg, 4 Kg, 6 Kg, 9 Kg</p></h4>
+                      </div>
+                      <span class="middle-line"></span>
+                    </div>
+                    <div class="d-flex fire-links">
+                      <a href="#" class="theme-btn">Place an Order</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+              
+            <div class="row">
+              <div class="col-md-8">
+                <div
+                  class="fire-bubble-art d-flex justify-content-between  align-items-center">
+                  <img
+                    src="/images/ABC Powder Cartridge Operated Portable Fire Extinguishers.webp"
+                    alt="image"
+                    onerror="this.src='/images/Spin@1x-0.7s-200px-200px.svg';"
+                    class="img-fluid fire-image fire-width">
+                  <div class="fire-content fire-width">
+                    <h3 class="mb-0">ABC Powder Cartridge Operated Portable Fire
+                      Extinguishers</h3>
+                    <div class="fire-time d-flex justify-content-between">
+                      <div class="current-bid">
+                        <h4>Available Capacities</h4>
+                      </div>
+                      <div class="auction">
+                        <h4><p>1 Kg, 2 Kg, 4 Kg, 6 Kg, 9 Kg</p></h4>
+                      </div>
+                      <span class="middle-line"></span>
+                    </div>
+                    <div class="d-flex fire-links">
+                      <a href="#" class="theme-btn">Place an Order</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+              
+            <div class="row">
+              <div class="col-md-8">
+                <div
+                  class="fire-bubble-art d-flex justify-content-between  align-items-center">
+                  <img
+                    src="/images/ABC Powder Cartridge Operated Mobile Fire Extinguishers.webp"
+                    alt="fire-bubble-image"
+                    class="img-fluid fire-image fire-width">
+                  <div class="fire-content fire-width">
+                    <h3 class="mb-0">ABC Powder Cartridge Operated Mobile Fire
+                      Extinguishers</h3>
+                    <div class="fire-time d-flex justify-content-between">
+                      <div class="current-bid">
+                        <h4>Available Capacities</h4>
+                      </div>
+                      <div class="auction">
+                        <h4><p>1 Kg, 2 Kg, 4 Kg, 6 Kg, 9 Kg</p></h4>
+                      </div>
+                      <span class="middle-line"></span>
+                    </div>
+                    <div class="d-flex fire-links">
+                      <a href="#" class="theme-btn">Place an Order</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+              
+            <div class="row" id="BC Powder Fire Extinguishers">
+              <div class="col-md-8">
+                <div
+                  class="fire-bubble-art d-flex justify-content-between  align-items-center">
+                  <img
+                    src="/images/BC Powder Cartridge Operated Mobile Fire Extinguishers.webp"
+                    alt="image"
+                    onerror="this.src='/images/Spin@1x-0.7s-200px-200px.svg';"
+                    class="img-fluid fire-image fire-width">
+                  <div class="fire-content fire-width">
+                    <h3 class="mb-0">BC Powder Cartridge Operated Mobile Fire
+                      Extinguishers</h3>
+                    <div class="fire-time d-flex justify-content-between">
+                      <div class="current-bid">
+                        <h4>Available Capacities</h4>
+                      </div>
+                      <div class="auction">
+                        <h4><p>1 Kg, 2 Kg, 4 Kg, 6 Kg, 9 Kg</p></h4>
+                      </div>
+                      <span class="middle-line"></span>
+                    </div>
+                    <div class="d-flex fire-links">
+                      <a href="#" class="theme-btn">Place an Order</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+              
+            <div class="row">
+              <div class="col-md-8">
+                <div
+                  class="fire-bubble-art d-flex justify-content-between  align-items-center">
+                  <img
+                    src="/images/BC Powder Stored Pressure Mobile Fire Extinguishers.webp"
+                    alt="image"
+                    onerror="this.src='/images/Spin@1x-0.7s-200px-200px.svg';"
+                    class="img-fluid fire-image fire-width">
+                  <div class="fire-content fire-width">
+                    <h3 class="mb-0">BC Powder Stored Pressure Mobile Fire
+                      Extinguishers</h3>
+                    <div class="fire-time d-flex justify-content-between">
+                      <div class="current-bid">
+                        <h4>Available Capacities</h4>
+                      </div>
+                      <div class="auction">
+                        <h4><p>1 Kg, 2 Kg, 4 Kg, 6 Kg, 9 Kg</p></h4>
+                      </div>
+                      <span class="middle-line"></span>
+                    </div>
+                    <div class="d-flex fire-links">
+                      <a href="#" class="theme-btn">Place an Order</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+              
+            <div class="row">
+              <div class="col-md-8">
+                <div
+                  class="fire-bubble-art d-flex justify-content-between  align-items-center">
+                  <img
+                    src="/images/BC Powder Cartridge Operated Portable Fire Extinguishers.webp"
+                    alt="image"
+                    onerror="this.src='/images/Spin@1x-0.7s-200px-200px.svg';"
+                    class="img-fluid fire-image fire-width">
+                  <div class="fire-content fire-width">
+                    <h3 class="mb-0">BC Powder Cartridge Operated Portable Fire
+                      Extinguishers</h3>
+                    <div class="fire-time d-flex justify-content-between">
+                      <div class="current-bid">
+                        <h4>Available Capacities</h4>
+                      </div>
+                      <div class="auction">
+                        <h4><p>1 Kg, 2 Kg, 4 Kg, 6 Kg, 9 Kg</p></h4>
+                      </div>
+                      <span class="middle-line"></span>
+                    </div>
+                    <div class="d-flex fire-links">
+                      <a href="#" class="theme-btn">Place an Order</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+              
+            <div class="row">
+              <div class="col-md-8">
+                <div
+                  class="fire-bubble-art d-flex justify-content-between  align-items-center">
+                  <img
+                    src="/images/BC Powder Cartridge Operated Portable Fire Extinguishers.webp"
+                    alt="image"
+                    onerror="this.src='/images/Spin@1x-0.7s-200px-200px.svg';"
+                    class="img-fluid fire-image fire-width">
+                  <div class="fire-content fire-width">
+                    <h3 class="mb-0">BC Powder Stored Pressure Potable Fire
+                      Extinguishers</h3>
+                    <div class="fire-time d-flex justify-content-between">
+                      <div class="current-bid">
+                        <h4>Available Capacities</h4>
+                      </div>
+                      <div class="auction">
+                        <h4><p>1 Kg, 2 Kg, 4 Kg, 6 Kg, 9 Kg</p></h4>
+                      </div>
+                      <span class="middle-line"></span>
+                    </div>
+                    <div class="d-flex fire-links">
+                      <a href="#" class="theme-btn">Place an Order</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+              
+            <div class="row" id="CO2">
+              <div class="col-md-8">
+                <div
+                  class="fire-bubble-art d-flex justify-content-between  align-items-center">
+                  <img
+                    src="/images/CO2 Mobile Portable Fire Extinguishers.webp"
+                    alt="image"
+                    onerror="this.src='/images/Spin@1x-0.7s-200px-200px.svg';"
+                    class="img-fluid fire-image fire-width">
+                  <div class="fire-content fire-width">
+                    <h3 class="mb-0">CO<sub>2</sub> Mobile Portable Fire
+                      Extinguishers</h3>
+                    <div class="fire-time d-flex justify-content-between">
+                      <div class="current-bid">
+                        <h4>Available Capacities</h4>
+                      </div>
+                      <div class="auction">
+                        <h4><p>1 Kg, 2 Kg, 4 Kg, 6 Kg, 9 Kg</p></h4>
+                      </div>
+                      <span class="middle-line"></span>
+                    </div>
+                    <div class="d-flex fire-links">
+                      <a href="#" class="theme-btn">Place an Order</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+              
+            <div class="row" id="CO2">
+              <div class="col-md-8">
+                <div
+                  class="fire-bubble-art d-flex justify-content-between  align-items-center">
+                  <img
+                    src="/images/CO2 Portable Fire Extinguishers.webp"
+                    alt="image"
+                    onerror="this.src='/images/Spin@1x-0.7s-200px-200px.svg';"
+                    class="img-fluid fire-image fire-width">
+                  <div class="fire-content fire-width">
+                    <h3 class="mb-0">CO<sub>2</sub> Portable Fire
+                      Extinguishers</h3>
+                    <div class="fire-time d-flex justify-content-between">
+                      <div class="current-bid">
+                        <h4>Available Capacities</h4>
+                      </div>
+                      <div class="auction">
+                        <h4><p>1 Kg, 2 Kg, 4 Kg, 6 Kg, 9 Kg</p></h4>
+                      </div>
+                      <span class="middle-line"></span>
+                    </div>
+                    <div class="d-flex fire-links">
+                      <a href="#" class="theme-btn">Place an Order</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+              
+            <div class="row" id="CA">
+              <div class="col-md-8">
+                <div
+                  class="fire-bubble-art d-flex justify-content-between  align-items-center">
+                  <img
+                    src="/images/Clean Agent Fire Extinguishers.webp"
+                    alt="image"
+                    onerror="this.src='/images/Spin@1x-0.7s-200px-200px.svg';"
+                    class="img-fluid fire-image fire-width">
+                  <div class="fire-content fire-width">
+                    <h3 class="mb-0">Clean Agent Fire Extinguishers</h3>
+                    <div class="fire-time d-flex justify-content-between">
+                      <div class="current-bid">
+                        <h4>Available Capacities</h4>
+                      </div>
+                      <div class="auction">
+                        <h4><p>1 Kg, 2 Kg, 4 Kg, 6 Kg, 9 Kg</p></h4>
+                      </div>
+                      <span class="middle-line"></span>
+                    </div>
+                    <div class="d-flex fire-links">
+                      <a href="#" class="theme-btn">Place an Order</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+              
+            <div class="row" id="WM">
+              <div class="col-md-8">
+                <div
+                  class="fire-bubble-art d-flex justify-content-between  align-items-center">
+                  <img
+                    src="/images/Water Mist Fire Extinguishers.webp"
+                    alt="image"
+                    onerror="this.src='/images/Spin@1x-0.7s-200px-200px.svg';"
+                    class="img-fluid fire-image fire-width">
+                  <div class="fire-content fire-width">
+                    <h3 class="mb-0">Water Mist Fire Extinguishers</h3>
+                    <div class="fire-time d-flex justify-content-between">
+                      <div class="current-bid">
+                        <h4>Available Capacities</h4>
+                      </div>
+                      <div class="auction">
+                        <h4><p>1 Kg, 2 Kg, 4 Kg, 6 Kg, 9 Kg</p></h4>
+                      </div>
+                      <span class="middle-line"></span>
+                    </div>
+                    <div class="d-flex fire-links">
+                      <a href="#" class="theme-btn">Place an Order</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+              
+            <div class="row" id="WM">
+              <div class="col-md-8">
+                <div
+                  class="fire-bubble-art d-flex justify-content-between  align-items-center">
+                  <img
+                    src="/images/Water Mist Fire Extinguishers.webp"
+                    alt="image"
+                    onerror="this.src='/images/Spin@1x-0.7s-200px-200px.svg';"
+                    class="img-fluid fire-image fire-width">
+                  <div class="fire-content fire-width">
+                    <h3 class="mb-0">Water Mist Fire Extinguishers</h3>
+                    <div class="fire-time d-flex justify-content-between">
+                      <div class="current-bid">
+                        <h4>Available Capacities</h4>
+                      </div>
+                      <div class="auction">
+                        <h4><p>1 Kg, 2 Kg, 4 Kg, 6 Kg, 9 Kg</p></h4>
+                      </div>
+                      <span class="middle-line"></span>
+                    </div>
+                    <div class="d-flex fire-links">
+                      <a href="#" class="theme-btn">Place an Order</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+              
+            <div class="row" id="WM">
+              <div class="col-md-8">
+                <div
+                  class="fire-bubble-art d-flex justify-content-between  align-items-center">
+                  <img
+                    src="/images/Water Mist Fire Extinguishers.webp"
+                    alt="image"
+                    onerror="this.src='/images/Spin@1x-0.7s-200px-200px.svg';"
+                    class="img-fluid fire-image fire-width">
+                  <div class="fire-content fire-width">
+                    <h3 class="mb-0">Water Mist Fire Extinguishers</h3>
+                    <div class="fire-time d-flex justify-content-between">
+                      <div class="current-bid">
+                        <h4>Available Capacities</h4>
+                      </div>
+                      <div class="auction">
+                        <h4><p>1 Kg, 2 Kg, 4 Kg, 6 Kg, 9 Kg</p></h4>
+                      </div>
+                      <span class="middle-line"></span>
+                    </div>
+                    <div class="d-flex fire-links">
+                      <a href="#" class="theme-btn">Place an Order</a>
+                    </div>
+                  </div>
+                </div>
+              </div>  
+            </div>
+              
+          </div>
+        </div>
+      </div>
+    </body>
+  </html>
